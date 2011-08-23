@@ -15,9 +15,4 @@ spec/reports
 test/tmp
 test/version_tmp
 tmp
-
-lib/hindb\303\246r.rb
-
-lib/hindb\303\246r.rb
-
-lib/hindb\303\246r.rb
+*.DS_Store
