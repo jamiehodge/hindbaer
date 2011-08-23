@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Session Version="Hindenburg Journalist Pro 1.12.1752" Samplerate="44100">
+  <Info Subtitle="test" Album="test" Track="test" Author="Moltke" Description="test" Title="test" Keywords="test"/>
+  <AudioPool Path="CCCmoltke Files" Location="/Users/hmol/Desktop">
+    <File Id="1" Name="110810_08.WAV" Duration="2:51:09.025" Channels="2" Leq="-10.4">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 1/110810_08.WAV"/>
+    </File>
+    <File Id="2" Name="110810_00^.wav" Duration="04:03.670" Channels="2" Leq="-16.4">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 1/110810_00.WAV"/>
+    </File>
+    <File Id="3" Name="110810_01^.wav" Duration="18.945" Channels="2" Leq="-20.2">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 1/110810_01.WAV"/>
+    </File>
+    <File Id="4" Name="110810_02.WAV" Duration="1:12:23.850" Channels="2" Leq="-16.2">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 1/110810_02.WAV"/>
+    </File>
+    <File Id="5" Name="110810_03.WAV" Duration="03:22.711" Channels="2" Leq="-19.5">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 1/110810_03.WAV"/>
+    </File>
+    <File Id="6" Name="110810_04.WAV" Duration="03:19.553" Channels="2" Leq="-22.7">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 1/110810_04.WAV"/>
+    </File>
+    <File Id="7" Name="110810_05.WAV" Duration="38.778" Channels="2" Leq="-18.4" Dyn="0.13">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 1/110810_05.WAV"/>
+    </File>
+    <File Id="8" Name="110810_06.WAV" Duration="36.967" Channels="2" Leq="-29.4">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 1/110810_06.WAV"/>
+    </File>
+    <File Id="9" Name="110810_07.WAV" Duration="37.756" Channels="2" Leq="-">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 1/110810_07.WAV"/>
+    </File>
+    <File Id="10" Name="110811_09.WAV" Duration="03:34.460" Channels="2" Leq="-23.0">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 2/110811_09.WAV"/>
+    </File>
+    <File Id="11" Name="110811_10.WAV" Duration="01:09.428" Channels="2" Leq="-21.8">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 2/110811_10.WAV"/>
+    </File>
+    <File Id="12" Name="110811_11.WAV" Duration="02:19.878" Channels="2" Leq="-23.5">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 2/110811_11.WAV"/>
+    </File>
+    <File Id="13" Name="110811_12.WAV" Duration="06:49.740" Channels="2" Leq="-25.7">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 2/110811_12.WAV"/>
+    </File>
+    <File Id="14" Name="110811_13.WAV" Duration="05:01.628" Channels="2" Leq="-21.0">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 2/110811_13.WAV"/>
+    </File>
+    <File Id="15" Name="110811_14.WAV" Duration="09:58.286" Channels="2" Leq="-24.2">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 2/110811_14.WAV"/>
+    </File>
+    <File Id="16" Name="110811_15.WAV" Duration="01:11.193" Channels="2" Leq="-27.5">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 2/110811_15.WAV"/>
+    </File>
+    <File Id="17" Name="110811_16.WAV" Duration="07:59.632" Channels="2" Leq="-25.1">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 2/110811_16.WAV"/>
+    </File>
+    <File Id="18" Name="110811_17.WAV" Duration="14.025" Channels="2" Leq="-22.8">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 2/110811_17.WAV"/>
+    </File>
+    <File Id="19" Name="110811_18.WAV" Duration="01:57.726" Channels="2" Leq="-25.2">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 2/110811_18.WAV"/>
+    </File>
+    <File Id="20" Name="110811_19.WAV" Duration="01:21.503" Channels="2" Leq="-24.9">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 2/110811_19.WAV"/>
+    </File>
+    <File Id="21" Name="110811_20.WAV" Duration="02:07.803" Channels="2" Leq="-23.4">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 2/110811_20.WAV"/>
+    </File>
+    <File Id="22" Name="110812_00.WAV" Duration="03:16.023" Channels="2" Leq="-16.9">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 2/110812_00.WAV"/>
+    </File>
+    <File Id="23" Name="110812_01.WAV" Duration="00.511" Channels="2" Leq="-">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 2/110812_01.WAV"/>
+    </File>
+    <File Id="24" Name="110812_02.WAV" Duration="05.062" Channels="2" Leq="-">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 2/110812_02.WAV"/>
+    </File>
+    <File Id="25" Name="110812_00-1.WAV" Duration="03:16.023" Channels="2" Leq="-16.9">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 3/110812_00.WAV"/>
+    </File>
+    <File Id="26" Name="110812_01-1.WAV" Duration="00.511" Channels="2" Leq="-">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 3/110812_01.WAV"/>
+    </File>
+    <File Id="27" Name="110812_02-1.WAV" Duration="05.062" Channels="2" Leq="-">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 3/110812_02.WAV"/>
+    </File>
+    <File Id="28" Name="110812_03.WAV" Duration="02:24.057" Channels="2" Leq="-28.1" Dyn="0.38">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 3/110812_03.WAV"/>
+    </File>
+    <File Id="29" Name="110812_04.WAV" Duration="01:42.958" Channels="2" Leq="-">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 3/110812_04.WAV"/>
+    </File>
+    <File Id="30" Name="110812_05.WAV" Duration="01:54.939" Channels="2" Leq="-">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 3/110812_05.WAV"/>
+    </File>
+    <File Id="31" Name="110812_06.WAV" Duration="16:51.555" Channels="2" Leq="-26.1" Dyn="0.40">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 3/110812_06.WAV"/>
+    </File>
+    <File Id="32" Name="110812_07.WAV" Duration="15:32.096" Channels="2" Leq="-26.2">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 3/110812_07.WAV"/>
+    </File>
+    <File Id="33" Name="110812_08.WAV" Duration="02:35.203" Channels="2" Leq="-">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 3/110812_08.WAV"/>
+    </File>
+    <File Id="34" Name="110812_09.WAV" Duration="32.323" Channels="2" Leq="-">
+      <MetaData OriginalPath="/Volumes/Macintosh HD/CCC/Dag 3/110812_09.WAV"/>
+    </File>
+    <File Id="35" Name="Selection.wav" Duration="33.553" Channels="2" Leq="-21.1">
+      <MetaData OriginalPath="/Users/hmol/Documents/Selection.wav"/>
+    </File>
+    <File Id="36" Name="Interview 5.wav" Duration="11.912" Leq="-15.4" Dyn="0.47"/>
+    <File Id="37" Name="Interview 10.wav" Duration="01:05.690" Leq="-19.7" Dyn="0.69"/>
+    <File Id="38" Name="Interview 13.wav" Duration="05.016" Leq="-20.9" Dyn="0.60"/>
+    <File Id="39" Name="Interview 14.wav" Duration="03.507" Leq="-18.7" Dyn="0.79"/>
+    <File Id="40" Name="Interview 19.wav" Duration="15.210" Leq="-22.5" Dyn="0.47"/>
+    <File Id="41" Name="Interview 21.wav" Duration="08.476" Leq="-23.3" Dyn="0.25"/>
+    <File Id="42" Name="Interview 28.wav" Duration="13.398" Leq="-22.4" Dyn="0.73"/>
+    <File Id="43" Name="Interview 30.wav" Duration="36.665" Leq="-23.3" Dyn="0.49"/>
+    <File Id="44" Name="Speak 13.wav" Duration="24.521" Leq="-24.0" Dyn="0.41"/>
+    <File Id="45" Name="Speak 14.wav" Duration="28.282" Leq="-25.0" Dyn="0.44"/>
+    <File Id="46" Name="Interview 32.wav" Duration="43.933" Leq="-20.8" Dyn="0.61"/>
+  </AudioPool>
+  <Tracks>
+    <Track Name="Speak" Pan="0.025">
+      <Region Ref="2" Name="110810_00" Length="11.099" Offset="08.000" FadeIn="01.000" FadeOut="00.294" Gain="-3.3" Leq="-16.4"/>
+      <Region Ref="2" Name="110810_00" Start="44.171" Length="08.808" Offset="01:11.521" FadeIn="00.036" FadeOut="00.245" Gain="-0.8" Leq="-16.4"/>
+      <Region Ref="37" Name="Interview 10" Start="01:36.175" Length="00.309" Offset="21.514" FadeIn="00.027" FadeOut="00.016" Gain="-1.3"/>
+      <Region Ref="37" Name="Interview 10" Start="01:40.612" Length="17.597" Offset="22.035" FadeOut="00.238" Gain="-1.3"/>
+      <Region Ref="37" Name="Interview 10" Start="02:10.891" Length="12.008" Offset="39.632" FadeIn="00.317" FadeOut="00.138" Gain="-0.8"/>
+      <Region Ref="12" Name="privatlliv" Start="02:34.120" Length="07.488" Offset="25.202" FadeIn="00.027" FadeOut="00.033" Gain="4.0" Leq="-23.5"/>
+      <Region Ref="12" Name="privatlliv" Start="02:45.563" Length="20.932" Offset="38.368" FadeIn="00.233" FadeOut="00.064" Gain="1.9" Leq="-23.5">
+        <Fade Start="00.996" Length="00.636" Gain="3.29747"/>
+        <Fade Start="04.178" Length="00.636" Gain="1.89874"/>
+      </Region>
+      <Region Ref="12" Name="privatlliv" Start="03:08.136" Length="05.875" Offset="01:04.773" FadeIn="00.030" Gain="0.5" Leq="-23.5"/>
+      <Region Ref="12" Name="privatlliv" Start="03:21.886" Length="09.862" Offset="01:21.630" Gain="0.5" Leq="-23.5"/>
+      <Region Ref="12" Name="privatlliv" Start="04:06.415" Length="06.478" Offset="01:36.420" FadeIn="00.432" FadeOut="00.132" Gain="-1.2" Leq="-23.5">
+        <Fade Start="01.259" Length="00.819" Gain="0.233123"/>
+        <Fade Start="05.354" Length="00.819" Gain="-1.16561"/>
+      </Region>
+      <Region Ref="12" Name="110811_11" Start="04:27.732" Length="04.507" Offset="02:13.741" FadeIn="00.078" FadeOut="00.237" Gain="-0.7" Leq="-23.5"/>
+      <Region Ref="20" Name="datatoilet" Start="04:45.803" Length="19.551" Offset="21.848" Gain="3.3" Leq="-24.9"/>
+      <Region Ref="20" Name="datatoilet" Start="05:22.834" Length="02.635" Offset="01:18.868" FadeIn="00.232" FadeOut="01.106" Gain="3.3" Leq="-24.9"/>
+      <Region Ref="42" Name="Interview 28" Start="05:34.906" Length="06.231" Offset="06.789" FadeIn="00.107" FadeOut="00.431" Gain="1.4"/>
+      <Region Ref="6" Name="110810_04" Start="06:13.474" Length="01.990" Offset="02:03.205" Gain="-2.3" Leq="-22.7"/>
+      <Region Ref="14" Name="jason street standup" Start="06:25.354" Length="33.195" Offset="02:02.099" FadeIn="01.061" FadeOut="00.138" Gain="1.4" Leq="-21.0">
+        <Fade Start="05.125" Length="01.950" Gain="-18.7848"/>
+        <Fade Start="17.932" Length="00.471" Gain="-5.26372"/>
+        <Fade Start="24.481" Length="01.002" Gain="-2.69937"/>
+      </Region>
+      <Region Ref="14" Name="jason street standup" Start="06:58.305" Length="28.075" Offset="02:41.722" FadeIn="00.210" Gain="-2.0" Leq="-21.0">
+        <Fade Start="01.347" Length="01.358" Gain="-22.981"/>
+        <Fade Start="09.002" Length="00.495" Gain="-0.135018"/>
+        <Fade Start="17.049" Length="00.728" Gain="-23.2142"/>
+      </Region>
+      <Region Ref="14" Name="jason street standup" Start="07:26.380" Length="30.589" Offset="03:18.110" FadeOut="00.396" Gain="-23.7" Leq="-21.0">
+        <Fade Start="03.088" Length="00.652" Gain="-0.834386"/>
+      </Region>
+      <Region Ref="44" Name="Speak 13" Start="08:45.733" Length="06.719" Offset="08.445" FadeIn="00.600" FadeOut="00.146" Gain="3.5"/>
+      <Region Ref="44" Name="Speak 13" Start="08:53.850" Length="07.862" Offset="15.164" FadeIn="00.250" FadeOut="00.693" Gain="3.5"/>
+      <Region Ref="45" Name="Speak 14" Start="09:48.087" Length="09.794" Offset="18.057" FadeIn="00.105" FadeOut="00.555" Gain="4.0"/>
+      <Region Ref="13" Name="danske blackhats" Start="10:04.596" Length="23.165" Offset="01:38.138" FadeIn="00.337" FadeOut="00.315" Gain="2.7" Leq="-25.7"/>
+      <Region Ref="13" Name="danske blackhats" Start="10:56.013" Length="05.469" Offset="03:15.599" FadeIn="00.154" FadeOut="00.877" Gain="2.7" Leq="-25.7"/>
+      <Region Ref="13" Name="danske blackhats" Start="11:07.947" Length="27.516" Offset="03:51.543" FadeIn="00.137" FadeOut="00.228" Gain="4.1" Leq="-25.7"/>
+      <Region Ref="21" Name="Tesla Coil" Start="43:30.754" Length="02:07.803" Gain="0.4" Leq="-23.4"/>
+      <Region Ref="32" Name="Markus B" Start="2:06:46.965" Length="13.180" Offset="15:18.916" Gain="3.2" Leq="-26.2"/>
+    </Track>
+    <Track Name="Interview" Pan="0.025">
+      <Region Ref="35" Name="Selection" Start="10.758" Length="33.553" FadeIn="00.085" Gain="1.2" Leq="-21.1"/>
+      <Region Ref="36" Name="Interview 5" Start="58.078" Length="05.636" Offset="05.840" FadeIn="00.773" FadeOut="00.140" Gain="-3.7"/>
+      <Region Ref="37" Name="Interview 10" Start="01:24.995" Length="11.228" Offset="02.831" FadeIn="00.211" FadeOut="00.040" Gain="-1.3"/>
+      <Region Ref="37" Name="Interview 10" Start="01:36.430" Length="04.185" Offset="16.487" Gain="-1.3"/>
+      <Region Ref="12" Name="privatlliv" Start="02:24.895" Length="09.339" FadeIn="01.300" FadeOut="00.024" Gain="1.7" Leq="-23.5"/>
+      <Region Ref="12" Name="privatlliv" Start="02:41.544" Length="04.267" Offset="33.577" FadeIn="00.048" FadeOut="00.034" Gain="1.9" Leq="-23.5"/>
+      <Region Ref="12" Name="privatlliv" Start="03:06.001" Length="02.319" Offset="01:01.367" FadeIn="00.099" FadeOut="00.020" Gain="0.5" Leq="-23.5"/>
+      <Region Ref="12" Name="privatlliv" Start="03:13.969" Length="08.007" Offset="01:11.956" Gain="0.5" Leq="-23.5"/>
+      <Region Ref="38" Name="Interview 13" Start="03:32.363" Length="01.030" Offset="01.489" Gain="0.9"/>
+      <Region Ref="39" Name="Interview 14" Start="03:37.618" Length="03.254" Offset="00.145" FadeIn="00.450" FadeOut="00.540" Gain="0.2"/>
+      <Region Ref="41" Name="Interview 21" Start="03:47.651" Length="08.227" Offset="00.145" FadeIn="00.300" FadeOut="00.557" Gain="2.2"/>
+      <Region Ref="40" Name="Interview 19" Start="03:58.383" Length="01.414" Offset="09.267" FadeIn="00.197" FadeOut="00.322" Gain="7.1"/>
+      <Region Ref="40" Name="Interview 19" Start="04:04.334" Length="03.056" Offset="10.681" FadeIn="00.635" FadeOut="00.460" Gain="1.5"/>
+      <Region Ref="12" Name="110811_11" Start="04:12.759" Length="15.222" Offset="01:57.123" FadeIn="00.045" FadeOut="00.205" Gain="-0.2" Leq="-23.5"/>
+      <Region Ref="20" Name="datatoilet" Start="04:31.302" Length="14.503" Offset="03.461" FadeIn="00.142" Gain="4.5" Leq="-24.9">
+        <Fade Start="02.719" Length="01.921" Gain="2.83375"/>
+        <Fade Start="12.324" Length="01.921" Gain="4.46561"/>
+      </Region>
+      <Region Ref="20" Name="datatoilet" Start="05:05.266" Length="18.265" Offset="57.399" FadeOut="00.392" Gain="3.3" Leq="-24.9"/>
+      <Region Ref="42" Name="Interview 28" Start="05:27.262" Length="06.644" Offset="00.145" FadeIn="00.399" FadeOut="00.274" Gain="1.4"/>
+      <Region Ref="5" Name="lockpick" Start="05:40.820" Length="14.276" Offset="21.335" FadeIn="00.334" Gain="-2.1" Leq="-19.5"/>
+      <Region Ref="6" Name="110810_04" Start="05:59.343" Length="06.115" Offset="57.215" Gain="1.4" Leq="-22.7">
+        <Fade Start="00.435" Length="00.671" Gain="1.63312"/>
+        <Fade Start="03.795" Length="00.671" Gain="1.4"/>
+      </Region>
+      <Region Ref="6" Name="110810_04" Start="06:09.212" Length="11.314" Offset="01:39.873" FadeIn="00.150" FadeOut="00.295" Leq="-22.7"/>
+      <Region Ref="6" Name="110810_04" Start="06:22.404" Length="04.187" Offset="02:47.480" FadeIn="00.600" FadeOut="00.217" Gain="1.4" Leq="-22.7">
+        <Fade Start="01.487" Length="00.212" Gain="2.79747"/>
+        <Fade Start="02.550" Length="00.212" Gain="1.39874"/>
+      </Region>
+      <Region Ref="43" Name="Interview 30" Start="06:31.472" Length="12.675" Offset="18.677" FadeIn="00.142" FadeOut="00.561" Gain="4.9"/>
+      <Region Ref="15" Name="jason street 1" Start="07:26.817" Length="03.050" Offset="05:22.445" FadeIn="00.063" FadeOut="00.119" Gain="2.4" Leq="-24.2"/>
+      <Region Ref="10" Name="quadrokopter" Start="07:54.620" Length="07.961" Offset="01:13.547" FadeIn="01.150" FadeOut="00.395" Leq="-23.0"/>
+      <Region Ref="11" Name="quadro 2" Start="08:10.094" Length="04.108" Offset="42.056" FadeIn="00.324" FadeOut="00.149" Gain="-0.5" Leq="-21.8"/>
+      <Region Ref="10" Name="quadrokopter" Start="08:22.306" Length="08.043" Offset="01:21.508" FadeIn="00.846" FadeOut="00.485" Gain="-0.7" Leq="-23.0"/>
+      <Region Ref="10" Name="quadrokopter" Start="08:38.485" Length="07.972" Offset="02:02.934" FadeOut="00.102" Gain="1.4" Leq="-23.0"/>
+      <Region Ref="10" Name="quadrokopter" Start="08:59.928" Length="23.961" Offset="02:36.609" FadeIn="00.423" FadeOut="00.098" Gain="3.1" Leq="-23.0"/>
+      <Region Ref="10" Name="quadrokopter" Start="09:28.574" Length="13.644" Offset="03:20.816" FadeOut="00.262" Gain="3.3" Leq="-23.0"/>
+      <Region Ref="13" Name="danske blackhats" Start="09:56.984" Length="08.244" Offset="01:28.268" FadeIn="00.225" FadeOut="00.311" Gain="2.7" Leq="-25.7"/>
+      <Region Ref="13" Name="danske blackhats" Start="10:27.426" Length="28.922" Offset="02:40.371" FadeIn="00.151" FadeOut="00.215" Gain="5.0" Leq="-25.7"/>
+      <Region Ref="13" Name="danske blackhats" Start="11:00.813" Length="07.556" Offset="03:36.144" FadeIn="00.183" FadeOut="00.265" Gain="5.7" Leq="-25.7"/>
+      <Region Ref="46" Name="Interview 32" Start="11:41.858" Length="13.956" Offset="20.933" FadeIn="00.283" FadeOut="00.085" Gain="0.9"/>
+      <Region Ref="46" Name="Interview 32" Start="12:09.263" Length="04.133" Offset="35.248" FadeIn="00.252" FadeOut="00.494" Gain="2.1"/>
+      <Region Ref="31" Name="110812_06" Start="12:18.104" Length="13.807" Offset="07:03.906" Gain="5.6" Leq="-28.1" Dyn="0.40"/>
+      <Region Ref="22" Name="Lotte F" Start="45:18.966" Length="02:31.223" Offset="44.800" Gain="-6.1" Leq="-16.9"/>
+      <Region Ref="31" Name="Kaminsky" Start="50:52.966" Length="16:51.555" Gain="5.1" Leq="-28.1" Dyn="0.40"/>
+      <Region Ref="4" Name="DDB" Start="2:00:22.976" Length="14:59.000" Offset="53:30.488" Gain="-1.0" Leq="-16.2"/>
+      <Plugins>
+        <Plugin Id="0" Name="Equalizer" UID="nheq" Bypass="1" MF_Q="0.1" LF_Gain="0.5" HP_Freq="0.00454545" HP_Gain="0.2" HF_Q="0.1" MF_Gain="0.5" HF_Gain="0.5" HF_Freq="0.363636" HF_Type="0" MF_Freq="0.0454545" LF_Freq="0.00909091" LF_Q="0.1" LF_Type="0">
+          <![CDATA[]]>
+        </Plugin>
+      </Plugins>
+    </Track>
+    <Track Name="Ambience">
+      <Region Ref="32" Name="Markus B" Start="52.822" Length="10.285" Offset="01:10.203" FadeIn="00.100" FadeOut="00.200" Gain="3.2" Leq="-26.2">
+        <Fade Start="06.426" Length="00.351" Gain="-11.4868"/>
+      </Region>
+      <Region Ref="32" Name="start markus b" Start="01:02.907" Length="01:30.618" Offset="30.710" FadeIn="00.200" FadeOut="03.493" Gain="-4.7" Leq="-26.2">
+        <Fade Start="00.200" Length="01.013" Gain="2.33123"/>
+        <Fade Start="22.564" Length="01.577" Gain="-21.9136"/>
+        <Fade Start="36.697" Length="04.043" Gain="-23.0791"/>
+        <Fade Start="41.296" Length="05.464" Gain="-20.7479"/>
+        <Fade Start="49.727" Length="02.221" Gain="-19.5823"/>
+        <Fade Start="54.777" Length="01.750" Gain="0.932491"/>
+        <Fade Start="01:08.548" Length="01.475" Gain="-21.6804"/>
+        <Fade Start="01:19.307" Length="00.366" Gain="0.233123"/>
+        <Fade Start="01:22.591" Length="04.534" Gain="-13.5211"/>
+      </Region>
+      <Region Ref="4" Name="DDB" Start="03:30.636" Length="37.147" Offset="52:54.826" FadeIn="01.000" FadeOut="03.797" Gain="-1.0" Leq="-16.2">
+        <Fade Start="01.582" Length="00.235" Gain="-8.92617"/>
+        <Fade Start="02.764" Length="00.233" Gain="0.466245"/>
+        <Fade Start="06.986" Length="00.662" Gain="-9.85866"/>
+        <Fade Start="09.316" Length="00.716" Gain="-1.69937"/>
+        <Fade Start="16.742" Length="00.807" Gain="-15.6867"/>
+        <Fade Start="24.611" Length="00.518" Gain="-1"/>
+        <Fade Start="27.695" Length="00.200" Gain="-11.2574"/>
+        <Fade Start="28.844" Length="00.442" Gain="-1"/>
+        <Fade Start="30.646" Length="00.266" Gain="0.466245"/>
+        <Fade Start="31.980" Length="00.266" Gain="-1"/>
+      </Region>
+      <Region Ref="5" Name="lockpick" Start="05:23.962" Length="20.793" Offset="01:03.141" FadeIn="00.075" FadeOut="02.487" Gain="-1.9" Leq="-19.5">
+        <Fade Start="03.102" Length="00.918" Gain="-12.5918"/>
+        <Fade Start="09.379" Length="00.327" Gain="-2.80067"/>
+        <Fade Start="11.014" Length="00.327" Gain="-16.3218"/>
+        <Fade Start="15.264" Length="00.940" Gain="-10.0275"/>
+        <Fade Start="17.853" Length="00.453" Gain="-13.5243"/>
+      </Region>
+      <Region Ref="6" Name="110810_04" Start="05:54.346" Length="05.042" Offset="48.068" FadeIn="00.350" Gain="0.7" Leq="-22.7">
+        <Fade Start="00.668" Length="00.400" Gain="-0.466245"/>
+        <Fade Start="02.672" Length="00.400" Gain="0.700632"/>
+      </Region>
+      <Region Ref="6" Name="110810_04" Start="06:05.348" Length="04.026" Offset="01:07.426" FadeOut="00.051" Gain="1.4" Leq="-22.7"/>
+      <Region Ref="6" Name="110810_04" Start="06:19.519" Length="03.960" Offset="01:54.702" FadeIn="00.300" FadeOut="00.392" Gain="0.7" Leq="-22.7"/>
+      <Region Ref="15" Name="jason street 1" Start="07:00.125" Length="07.458" Offset="04:38.704" FadeIn="00.100" FadeOut="00.085" Gain="4.7" Leq="-24.2"/>
+      <Region Ref="15" Name="jason street 1" Start="07:15.479" Length="11.609" Offset="04:46.783" FadeIn="00.072" FadeOut="00.068" Gain="1.7" Leq="-24.2"/>
+      <Region Ref="11" Name="quadro 2" Start="08:00.603" Length="09.832" Offset="12.645" FadeIn="00.463" FadeOut="00.024" Gain="-0.3" Leq="-21.8"/>
+      <Region Ref="11" Name="quadro 2" Start="08:13.753" Length="13.855" Offset="48.129" FadeIn="00.024" FadeOut="01.051" Gain="-0.7" Leq="-21.8"/>
+      <Region Ref="10" Name="quadrokopter" Start="08:28.975" Length="09.730" Offset="01:29.087" FadeIn="00.225" Gain="1.1" Leq="-23.0"/>
+      <Region Ref="10" Name="quadrokopter" Start="08:51.894" Length="04.464" Offset="02:16.475" FadeIn="00.350" FadeOut="02.126" Gain="-1.6" Leq="-23.0"/>
+      <Region Ref="10" Name="quadrokopter" Start="09:23.539" Length="05.396" Offset="03:10.570" FadeIn="00.250" Gain="1.9" Leq="-23.0"/>
+      <Region Ref="13" Name="danske blackhats" Start="09:43.366" Length="04.905" Offset="02:04.025" FadeIn="00.354" Gain="2.2" Leq="-25.7"/>
+      <Region Ref="31" Name="110812_06" Start="11:34.671" Length="07.544" Offset="05:44.987" Gain="5.1" Leq="-28.1" Dyn="0.40"/>
+      <Region Ref="31" Name="110812_06" Start="11:55.633" Length="13.939" Offset="05:52.810" FadeIn="00.025" FadeOut="00.132" Gain="5.1" Leq="-28.1" Dyn="0.40">
+        <Fade Start="01.176" Length="02.239" Gain="1.13691"/>
+      </Region>
+      <Region Ref="31" Name="110812_06" Start="12:13.118" Length="05.164" Offset="06:09.436" Gain="5.6" Leq="-28.1" Dyn="0.40"/>
+      <Region Ref="31" Name="110812_06" Start="15:38.474" Length="47.795" Offset="06:30.295" Gain="5.1" Leq="-28.1" Dyn="0.40"/>
+    </Track>
+    <Track Name="Music">
+      <Region Ref="1" Name="110810_08" Length="12:43.363" FadeIn="33.600" Gain="-24.3" Leq="-10.4">
+        <Fade Start="52.061" Length="00.833" Gain="-25.6549"/>
+        <Fade Start="53.554" Length="06.690" Gain="-27.5199"/>
+        <Fade Start="01:15.820" Length="01.072" Gain="-27.2867"/>
+        <Fade Start="01:21.182" Length="01.072" Gain="-28.2193"/>
+        <Fade Start="01:39.550" Length="02.357" Gain="-25.4218"/>
+        <Fade Start="01:51.335" Length="02.357" Gain="-28.2193"/>
+        <Fade Start="04:10.289" Length="04.000" Gain="-34.7467"/>
+        <Fade Start="04:34.007" Length="04.000" Gain="-28.2193"/>
+        <Fade Start="05:23.655" Length="03.435" Gain="-25.6549"/>
+        <Fade Start="05:40.833" Length="03.435" Gain="-28.2193"/>
+        <Fade Start="07:50.425" Length="01.666" Gain="-22.1581"/>
+        <Fade Start="07:59.759" Length="04.266" Gain="-28.2193"/>
+        <Fade Start="08:40.114" Length="06.116" Gain="-16.7963"/>
+        <Fade Start="09:01.125" Length="08.671" Gain="-25.6549"/>
+        <Fade Start="09:44.453" Length="09.621" Gain="-23.5568"/>
+        <Fade Start="10:23.671" Length="05.839" Gain="-25.6549"/>
+        <Fade Start="11:31.380" Length="10.503" Gain="-19.3606"/>
+        <Fade Start="12:30.116" Length="05.898" Gain="-25.6549"/>
+      </Region>
+      <Region Ref="1" Name="110810_08" Start="14:25.914" Length="2:36:43.111" Offset="14:25.914" Gain="-28.2" Leq="-10.4"/>
+    </Track>
+    <Track Name="højre" Pan="0.125">
+      <Region Ref="10" Name="quadrokopter" Start="08:42.712" Length="13.679" Offset="01:13.547" FadeIn="01.150" FadeOut="02.987" Gain="-4.9" Leq="-23.0"/>
+      <Region Ref="10" Name="quadrokopter" Start="08:56.391" Length="07.961" Offset="01:13.547" FadeIn="01.150" FadeOut="02.586" Gain="-7.0" Leq="-23.0"/>
+      <Region Ref="10" Name="quadrokopter" Start="09:39.574" Length="05.304" Offset="01:13.547" FadeIn="01.150" FadeOut="00.975" Gain="-7.0" Leq="-23.0"/>
+    </Track>
+    <Track Name="Venstre" Pan="-0.425"/>
+  </Tracks>
+  <Clipboard>
+    <Group Caption="Group 1" Used="9">
+      <Clip Ref="2" Name="110810_00" Length="04:03.669" Leq="-"/>
+      <Clip Ref="4" Name="110810_02" Length="1:12:23.850" Leq="-"/>
+      <Clip Ref="35" Name="Selection" Length="33.553" Leq="-"/>
+      <Clip Ref="5" Name="110810_03" Length="03:22.711" Leq="-"/>
+      <Clip Ref="7" Name="110810_05" Length="38.778" Leq="-"/>
+      <Clip Ref="3" Name="110810_01" Length="18.943" Leq="-"/>
+      <Clip Ref="8" Name="110810_06" Length="36.967" Leq="-"/>
+      <Clip Ref="1" Name="110810_08" Length="2:51:09.025" Leq="-"/>
+      <Clip Ref="6" Name="110810_04" Length="03:19.553" Leq="-"/>
+      <Clip Ref="9" Name="110810_07" Length="37.756" Leq="-"/>
+    </Group>
+    <Group Caption="Group 2" Used="13">
+      <Clip Ref="10" Name="110811_09" Length="03:34.460" Leq="-"/>
+      <Clip Ref="12" Name="110811_11" Length="02:19.878" Leq="-"/>
+      <Clip Ref="11" Name="110811_10" Length="01:09.428" Leq="-"/>
+      <Clip Ref="14" Name="110811_13" Length="05:01.628" Leq="-"/>
+      <Clip Ref="15" Name="110811_14" Length="09:58.286" Leq="-"/>
+      <Clip Ref="16" Name="110811_15" Length="01:11.193" Leq="-"/>
+      <Clip Ref="19" Name="110811_18" Length="01:57.726" Leq="-"/>
+      <Clip Ref="17" Name="110811_16" Length="07:59.632" Leq="-"/>
+      <Clip Ref="18" Name="110811_17" Length="14.025" Leq="-"/>
+      <Clip Ref="20" Name="110811_19" Length="01:21.503" Leq="-"/>
+      <Clip Ref="21" Name="110811_20" Length="02:07.803" Leq="-"/>
+      <Clip Ref="22" Name="110812_00" Length="03:16.023" Leq="-"/>
+      <Clip Ref="13" Name="110811_12" Length="06:49.740" Leq="-"/>
+      <Clip Ref="23" Name="110812_01" Length="00.511" Leq="-"/>
+      <Clip Ref="24" Name="110812_02" Length="05.062" Leq="-"/>
+    </Group>
+    <Group Caption="Group 3" Used="4">
+      <Clip Ref="25" Name="110812_00" Length="03:16.023" Leq="-"/>
+      <Clip Ref="28" Name="110812_03" Length="02:24.057" Leq="-"/>
+      <Clip Ref="31" Name="110812_06" Length="16:51.555" Leq="-"/>
+      <Clip Ref="32" Name="110812_07" Length="15:32.096" Leq="-"/>
+      <Clip Ref="26" Name="110812_01" Length="00.511" Leq="-"/>
+      <Clip Ref="27" Name="110812_02" Length="05.062" Leq="-"/>
+      <Clip Ref="29" Name="110812_04" Length="01:42.958" Leq="-"/>
+      <Clip Ref="30" Name="110812_05" Length="01:54.939" Leq="-"/>
+      <Clip Ref="33" Name="110812_08" Length="02:35.203" Leq="-"/>
+      <Clip Ref="34" Name="110812_09" Length="32.323" Leq="-"/>
+    </Group>
+    <Group Caption="Group 4"/>
+  </Clipboard>
+  <Markers>
+    <Marker Id="1" Name="In" Time="01:01.000"/>
+    <Marker Id="2" Name="Out" Time="12:42.720"/>
+    <Marker Id="3" Name="Marker 3" Time="01:01.000"/>
+  </Markers>
+</Session>
