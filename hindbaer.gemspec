@@ -4,9 +4,9 @@ require File.expand_path('../lib/hindbaer/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Jamie Hodge"]
   gem.email         = ["jamiehodge@me.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{A Hindenburg Journalist client}
+  gem.summary       = %q{Parse, modify and generate Hindenburg Journalist audio session files}
+  gem.homepage      = "http://github.com/jamiehodge/hindbaer"
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files`.split("\n")
