@@ -48,7 +48,7 @@ module Hindbaer
     end
     
     def audio_pool
-      @doc.css('AudioPool File').map { |f| Hindbaer::Audio.new(f.unlink) }
+      @doc.css('AudioPool File').map { |f| Hindbaer::Audio.new(f.dup.unlink) }
     end
     
     def audio_pool_path
@@ -60,11 +60,11 @@ module Hindbaer
     end
     
     def tracks
-      @doc.css('Tracks Track').map { |t| Hindbaer::Track.new(t.unlink, self) }
+      @doc.css('Tracks Track').map { |t| Hindbaer::Track.new(t.dup.unlink, self) }
     end
     
     def markers
-      @doc.css('Markers Marker').map { |m| Hindbaer::Marker.new(m.unlink) }
+      @doc.css('Markers Marker').map { |m| Hindbaer::Marker.new(m.dup.unlink) }
     end
     
     def length
@@ -73,8 +73,8 @@ module Hindbaer
       end.compact
       
       regions.map do |r| 
-        Hindbaer.tc_to_secs(r.start_time) + 
-        Hindbaer.tc_to_secs(r.length)
+        tc_to_secs(r.start_time) + 
+        tc_to_secs(r.length)
       end.max
     end
     
@@ -82,6 +82,14 @@ module Hindbaer
     
       def info
         @doc.at_css('Info')
+      end
+      
+      def tc_to_secs(timecode)
+        seconds, minutes, hours = timecode.split(':').reverse
+        total = seconds.to_f if seconds
+        total += minutes.to_f * 60 if minutes
+        total += hours.to_f * 60 * 60 if hours
+        total
       end
 
   end

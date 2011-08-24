@@ -17,7 +17,7 @@ module Hindbaer
     end
     
     def regions
-      @doc.css('Region').map { |r| Hindbaer::Region.new(r.unlink, self) }
+      @doc.css('Region').map { |r| Hindbaer::Region.new(r.dup.unlink, self) }
     end
   end
 end

@@ -53,7 +53,7 @@ module Hindbaer
     end
     
     def fades
-      @doc.css('Fade').map { |f| Hindbaer::Fade.new(f.unlink) }
+      @doc.css('Fade').map { |f| Hindbaer::Fade.new(f.dup.unlink) }
     end
   end
 end
