@@ -39,7 +39,7 @@ describe Hindbaer::Region do
     @region.gain.must_equal -3.3
   end
   
-  it 'must return long-term equivalent level)' do
+  it 'must return long-term equivalent level' do
     @region.leq.must_equal -16.4
   end
   
