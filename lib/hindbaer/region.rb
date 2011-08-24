@@ -51,5 +51,9 @@ module Hindbaer
     def dynamics
       @doc['Dyn'].to_f || 0.0
     end
+    
+    def fades
+      @doc.css('Fade').map { |f| Hindbaer::Fade.new(f.unlink) }
+    end
   end
 end

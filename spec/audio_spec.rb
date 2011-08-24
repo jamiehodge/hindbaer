@@ -12,7 +12,7 @@ describe Hindbaer::Audio do
   end
   
   it 'must return name' do
-    @audio.name.must_equal '110810_08.WAV'
+    @audio.name.must_equal 'file1.wav'
   end
   
   it 'must return duration' do
@@ -32,7 +32,7 @@ describe Hindbaer::Audio do
   end
   
   it 'must return the original file path' do
-    @audio.original_path.must_equal '/Volumes/Macintosh HD/CCC/Dag 1/110810_08.WAV'
+    @audio.original_path.must_equal '/path/to/file1.wav'
   end
   
 end

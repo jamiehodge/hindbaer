@@ -16,6 +16,6 @@ describe Hindbaer::Track do
   end
   
   it 'must return all regions' do
-    @track.regions.size.must_equal 26
+    @track.regions.size.must_equal 2
   end
 end

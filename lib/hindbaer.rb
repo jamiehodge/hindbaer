@@ -7,6 +7,7 @@ require 'hindbaer/session'
 require 'hindbaer/audio'
 require 'hindbaer/track'
 require 'hindbaer/region'
+require 'hindbaer/fade'
 require 'hindbaer/marker'
 
 module Hindbaer

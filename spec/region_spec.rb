@@ -8,11 +8,11 @@ describe Hindbaer::Region do
   end
   
   it 'must return audio reference' do
-    @region.reference.id.must_equal 2
+    @region.reference.id.must_equal 1
   end
   
   it 'must return name' do
-    @region.name.must_equal '110810_00'
+    @region.name.must_equal 'Speak 1'
   end
   
   it 'must return start time' do
@@ -41,5 +41,9 @@ describe Hindbaer::Region do
   
   it 'must return long-term equivalent level)' do
     @region.leq.must_equal -16.4
+  end
+  
+  it 'must return all fades' do
+    @region.fades.size.must_equal 1
   end
 end
