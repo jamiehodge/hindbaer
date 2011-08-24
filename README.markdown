@@ -14,24 +14,36 @@ Usage
 
 Parse a session file:
 
-    project = Hindbaer::Session.new('spec/fixtures/project.nhsx')
-    project.software_version
-    project.sample_rate
-    project.title
-    project.subtitle
-    project.description
-    project.author
-    project.album
-    project.album_track
-    project.keywords
-    project.length # in seconds
+    session = Hindbaer::Session.new('spec/fixtures/project.nhsx')
+    
+    session.software_version
+    session.sample_rate
+    
+    session.info.title
+    session.info.subtitle
+    session.info.description
+    session.info.author
+    session.info.album
+    session.ínfo.album_track
+    session.info.keywords
+    # etc.
+    
+    session.length # in seconds
     
 Retrieve all tracks:
 
-    tracks = project.tracks
+    tracks = session.tracks
     track = tracks.first
     track.name
     track.panning
+    
+Retrieve all track plugins:
+
+    plugins = track.plugins
+    plugin = plugins.first
+    plugin.id
+    plugin.name
+    plugin.uid
     
 Retrieve all regions for a given track:
 
@@ -55,9 +67,23 @@ Retrieve all fades for a given region:
     fade.length
     fade.gain
     
+Retrieve all clipboard groups and their clips:
+
+    groups = session.clipboard_groups
+    group = group.first
+    group.caption
+    group.num_clips_used
+    
+    clips = group.clips
+    clip = clips.first
+    clip.reference
+    clip.name
+    clip.length
+    clip.leq # (long-term equivalent level)
+    
 Retrieve all markers:
 
-    markers = project.markers
+    markers = session.markers
     marker = markers.first
     marker.id
     marker.name
@@ -65,8 +91,11 @@ Retrieve all markers:
     
 Retrieve all audio file references:
 
-    audio_pool = project.audio_pool
-    file = audio_pool.first
+    audio_pool = session.audio_pool
+    audio_pool.path
+    audio_pool.location
+    
+    file = audio_pool.files.first
     file.id
     file.name
     file.duration

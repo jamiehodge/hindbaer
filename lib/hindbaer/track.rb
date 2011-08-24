@@ -1,8 +1,8 @@
 module Hindbaer
   class Track
     
-    def initialize(node, session = nil)
-      @doc = node
+    def initialize(fragment, session = nil)
+      @doc = fragment
       @session = session
     end
     
@@ -18,6 +18,10 @@ module Hindbaer
     
     def regions
       @doc.css('Region').map { |r| Hindbaer::Region.new(r.dup.unlink, self) }
+    end
+    
+    def plugins
+      @doc.css('Plugin').map { |p| Hindbaer::Plugin.new(p.dup.unlink) }
     end
   end
 end

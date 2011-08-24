@@ -1,5 +1,5 @@
 module Hindbaer
-  class Audio
+  class File
     def initialize(fragment)
       @doc = fragment
     end

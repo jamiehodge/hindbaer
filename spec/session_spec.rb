@@ -14,51 +14,26 @@ describe Hindbaer::Session do
     @session.sample_rate.must_equal '44100'
   end
   
-  it 'must return title' do
-    @session.title.must_equal 'Example session'
+  it 'must return session info' do
+    @session.info.must_be_instance_of Hindbaer::Info
   end
   
-  it 'must return subtitle' do
-    @session.subtitle.must_equal 'An example session'
-  end
-  
-  it 'must return description' do
-    @session.description.must_equal 'An example description'
-  end
-  
-  it 'must return author' do
-    @session.author.must_equal 'Jamie Hodge'
-  end
-  
-  it 'must return album' do
-    @session.album.must_equal 'An example album'
-  end
-  
-  it 'must return album track' do
-    @session.album_track.must_equal 'An example track'
-  end
-  
-  it 'must return keywords' do
-    @session.keywords.must_equal ['example', 'test']
-  end
-  
-  it 'must return all audio files' do
-    @session.audio_pool.size.must_equal 4
-  end
-  
-  it 'must return path to audio files' do
-    @session.audio_pool_path.must_equal 'Example session Files'
-  end
-  
-  it 'must return location of audio file path' do
-    @session.audio_pool_location.must_equal '/Users/jamiehodge/Desktop'
+  it 'must return audio pool' do
+    @session.audio_pool.must_be_instance_of Hindbaer::AudioPool
   end
   
   it 'must return all tracks' do
+    @session.tracks.first.must_be_kind_of Hindbaer::Track
     @session.tracks.size.must_equal 5
   end
   
+  it 'must return clipboard groups' do
+    @session.clipboard_groups.first.must_be_kind_of Hindbaer::Group
+    @session.clipboard_groups.size.must_equal 4
+  end
+  
   it 'must return all markers' do
+    @session.markers.first.must_be_kind_of Hindbaer::Marker
     @session.markers.size.must_equal 2
   end
   

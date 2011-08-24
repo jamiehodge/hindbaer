@@ -4,10 +4,12 @@ describe Hindbaer::Region do
   
   before do
     session = Hindbaer::Session.new('spec/fixtures/project.nhsx')
-    @region = session.tracks.first.regions.first
+    @track = session.tracks.first
+    @region = @track.regions.first
   end
   
   it 'must return audio reference' do
+    @region.reference.must_be_kind_of Hindbaer::File
     @region.reference.id.must_equal 1
   end
   
@@ -44,6 +46,11 @@ describe Hindbaer::Region do
   end
   
   it 'must return all fades' do
+    @region.fades.first.must_be_kind_of Hindbaer::Fade
     @region.fades.size.must_equal 1
+  end
+  
+  it 'must return parent track' do
+    @region.track.must_equal @track
   end
 end

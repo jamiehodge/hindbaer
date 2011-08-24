@@ -1,21 +1,20 @@
 module Hindbaer
-  class Fade
+  class Plugin
     
     def initialize(fragment)
       @doc = fragment
     end
     
-    def start_time
-      @doc['Start']
+    def id
+      @doc['Id'].to_i
     end
     
-    def length
-      @doc['Length']
+    def name
+      @doc['Name']
     end
     
-    def gain
-      @doc['Gain']
+    def uid
+      @doc['UID']
     end
-    
   end
 end

@@ -1,7 +1,7 @@
 module Hindbaer
   class Region
-    def initialize(node, track = nil)
-      @doc = node
+    def initialize(fragment, track = nil)
+      @doc = fragment
       @track = track
     end
     
@@ -9,7 +9,7 @@ module Hindbaer
     
     def reference
       id = @doc['Ref'].to_i
-      self.track.session.audio_pool.find { |a| a.id == id }
+      self.track.session.audio_pool.files.find { |a| a.id == id }
     end
     
     def name

@@ -1,38 +1,38 @@
 require 'spec_helper'
 
-describe Hindbaer::Audio do
+describe Hindbaer::File do
   
   before do
     project = Hindbaer::Session.new('spec/fixtures/project.nhsx')
-    @audio = project.audio_pool.first
+    @file = project.audio_pool.files.first
   end
   
   it 'must return id' do
-    @audio.id.must_equal 1
+    @file.id.must_equal 1
   end
   
   it 'must return name' do
-    @audio.name.must_equal 'file1.wav'
+    @file.name.must_equal 'file1.wav'
   end
   
   it 'must return duration' do
-    @audio.duration.must_equal '2:51:09.025'
+    @file.duration.must_equal '2:51:09.025'
   end
   
   it 'must return the number of channels' do
-    @audio.num_channels.must_equal 2
+    @file.num_channels.must_equal 2
   end
   
   it 'must return leq' do
-    @audio.leq.must_equal -10.4
+    @file.leq.must_equal -10.4
   end
   
   it 'must return dynamics' do
-    @audio.dynamics.must_equal 0.0
+    @file.dynamics.must_equal 0.0
   end
   
   it 'must return the original file path' do
-    @audio.original_path.must_equal '/path/to/file1.wav'
+    @file.original_path.must_equal '/path/to/file1.wav'
   end
   
 end

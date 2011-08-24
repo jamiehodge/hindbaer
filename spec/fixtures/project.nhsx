@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Session Version="Hindenburg Journalist Pro 1.12.1752" Samplerate="44100">
-  <Info Subtitle="An example session" Album="An example album" Track="An example track" Author="Jamie Hodge" Description="An example description" Title="Example session" Keywords="example, test"/>
+  <Info Subtitle="Vestibulum Ante Ipsum Primis" Album="Nulla At Nulla" Composer="Quisque Eget Odio Ac" Track="1" Genre="Podcast" Author="Jamie Hodge" Link="http://" Email="user@example.com" Description="Etiam at risus et justo" Artist="Lorem Ipsum Dolor" Date="Today" Title="Suspendisse Dictum Feugiat Nisl Ut" Explicit="Yes" Copyright="2011" Identifier="Lorem Ipsum Dolor Sit" Keywords="In, Condimentum, Facilisis" Reference="Vivamus Hendrerit Arcu" />
   <AudioPool Path="Example session Files" Location="/Users/jamiehodge/Desktop">
     <File Id="1" Name="file1.wav" Duration="2:51:09.025" Channels="2" Leq="-10.4">
       <MetaData OriginalPath="/path/to/file1.wav"/>
@@ -21,6 +21,11 @@
         <Fade Start="00.200" Length="01.013" Gain="2.33123"/>
       </Region>
       <Region Ref="1" Name="Speak 2" Start="44.171" Length="08.808" Offset="01:11.521" FadeIn="00.036" FadeOut="00.245" Gain="-0.8" Leq="-16.4"/>
+      <Plugins>
+        <Plugin Id="0" Name="Equalizer" UID="nheq" Bypass="1" MF_Q="0.1" LF_Gain="0.5" HP_Freq="0.00454545" HP_Gain="0.2" HF_Q="0.1" MF_Gain="0.5" HF_Gain="0.5" HF_Freq="0.363636" HF_Type="0" MF_Freq="0.0454545" LF_Freq="0.00909091" LF_Q="0.1" LF_Type="0">
+          <![CDATA[]]>
+        </Plugin>
+      </Plugins>
     </Track>
     <Track Name="Interview" Pan="0.025">
       <Region Ref="2" Name="Interview 1" Start="10.758" Length="33.553" FadeIn="00.085" Gain="1.2" Leq="-21.1"/>
