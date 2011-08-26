@@ -7,7 +7,7 @@ describe Hindbaer::Session do
   end
   
   it 'must return software version' do
-    @session.software_version.must_equal 'Hindenburg Journalist Pro 1.12.1752'
+    @session.software_version.must_equal 'Hindenburg Journalist Pro 1.10.1742'
   end
   
   it 'must return sample rate' do
@@ -39,6 +39,13 @@ describe Hindbaer::Session do
   
   it 'must calculate the total length in seconds' do
     @session.length.must_equal 10269.025000000001
+  end
+  
+  it 'must render itself as xml' do
+   File.open('/Users/jamiehodge/Desktop/untitled.nhsx', 'w') do |file|
+     file << @session.to_xml
+   end
+    @session.to_xml.must_equal File.open('spec/fixtures/project.nhsx').read
   end
   
 end

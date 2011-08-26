@@ -30,6 +30,10 @@ Parse a session file:
     
     session.length # in seconds
     
+Render Session object as xml:
+
+    session.to_xml
+    
 Retrieve all tracks:
 
     tracks = session.tracks
