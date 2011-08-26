@@ -1,20 +1,26 @@
+require_relative 'plugin/base'
+require_relative 'plugin/equalizer'
+require_relative 'plugin/compressor'
+require_relative 'plugin/voice_profiler'
+
 module Hindbaer
-  class Plugin
+  module Plugin
+    extend self
     
-    def initialize(fragment)
-      @doc = fragment
+    def create(fragment)
+      case fragment['UID']
+      when 'nheq'
+        Hindbaer::Plugin::Equalizer.new(fragment)
+      when 'nhcl'
+        Hindbaer::Plugin::Compressor.new(fragment)
+      when 'nhlu'
+        Hindbaer::Plugin::Base.new(fragment)
+      when 'nhft'
+        Hindbaer::Plugin::VoiceProfiler.new(fragment)
+      end
     end
     
-    def id
-      @doc['Id'].to_i
-    end
-    
-    def name
-      @doc['Name']
-    end
-    
-    def uid
-      @doc['UID']
-    end
   end
+  
 end
+

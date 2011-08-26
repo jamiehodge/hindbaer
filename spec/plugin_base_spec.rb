@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Hindbaer::Plugin do
+describe Hindbaer::Plugin::Base do
   
   before do
     project = Hindbaer::Session.new('spec/fixtures/project.nhsx')

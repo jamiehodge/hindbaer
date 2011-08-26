@@ -21,7 +21,7 @@ module Hindbaer
     end
     
     def plugins
-      @doc.css('Plugin').map { |p| Hindbaer::Plugin.new(p.dup.unlink) }
+      @doc.css('Plugin').map { |p| Hindbaer::Plugin.create(p.dup.unlink) }
     end
   end
 end

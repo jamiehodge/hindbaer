@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Session Version="Hindenburg Journalist Pro 1.12.1752" Samplerate="44100">
-  <Info Subtitle="Vestibulum Ante Ipsum Primis" Album="Nulla At Nulla" Composer="Quisque Eget Odio Ac" Track="1" Genre="Podcast" Author="Jamie Hodge" Link="http://" Email="user@example.com" Description="Etiam at risus et justo" Artist="Lorem Ipsum Dolor" Date="Today" Title="Suspendisse Dictum Feugiat Nisl Ut" Explicit="Yes" Copyright="2011" Identifier="Lorem Ipsum Dolor Sit" Keywords="In, Condimentum, Facilisis" Reference="Vivamus Hendrerit Arcu" />
+<Session Version="Hindenburg Journalist Pro 1.10.1742" Samplerate="44100">
+  <Info Subtitle="Vestibulum Ante Ipsum Primis" Album="Nulla At Nulla" Composer="Quisque Eget Odio Ac" Track="1" Genre="Podcast" Author="Jamie Hodge" Link="http://" Email="user@example.com" Description="Etiam at risus et justo" Artist="Lorem Ipsum Dolor" Date="Today" Title="Suspendisse Dictum Feugiat Nisl Ut" Explicit="Yes" Copyright="2011" Keywords="In, Condimentum, Facilisis" Identifier="Lorem Ipsum Dolor Sit" Reference="Vivamus Hendrerit Arcu"/>
   <AudioPool Path="Example session Files" Location="/Users/jamiehodge/Desktop">
     <File Id="1" Name="file1.wav" Duration="2:51:09.025" Channels="2" Leq="-10.4">
       <MetaData OriginalPath="/path/to/file1.wav"/>
@@ -12,7 +12,7 @@
       <MetaData OriginalPath="/path/to/file3.wav"/>
     </File>
     <File Id="4" Name="file4.wav" Duration="1:12:23.850" Channels="2" Leq="-16.2">
-      <MetaData OriginalPath="/path/to/file4.wav/>
+      <MetaData OriginalPath="/path/to/file4.wav"/>
     </File>
   </AudioPool>
   <Tracks>
@@ -22,16 +22,19 @@
       </Region>
       <Region Ref="1" Name="Speak 2" Start="44.171" Length="08.808" Offset="01:11.521" FadeIn="00.036" FadeOut="00.245" Gain="-0.8" Leq="-16.4"/>
       <Plugins>
-        <Plugin Id="0" Name="Equalizer" UID="nheq" Bypass="1" MF_Q="0.1" LF_Gain="0.5" HP_Freq="0.00454545" HP_Gain="0.2" HF_Q="0.1" MF_Gain="0.5" HF_Gain="0.5" HF_Freq="0.363636" HF_Type="0" MF_Freq="0.0454545" LF_Freq="0.00909091" LF_Q="0.1" LF_Type="0">
+        <Plugin Id="0" Name="Equalizer" UID="nheq" MF_Q="0.1" LF_Gain="0.5" HP_Freq="0.00454545" HP_Gain="0.2" HF_Q="0.1" MF_Gain="0.5" HF_Gain="0.5" HF_Freq="0.363636" HF_Type="0" MF_Freq="0.0454545" LF_Freq="0.00909091" LF_Q="0.1" LF_Type="0">
           <![CDATA[]]>
         </Plugin>
+        <Plugin Id="1" Name="Compressor" UID="nhcl" Comp="0.275"/>
+        <Plugin Id="2" Name="Loudness Meter" UID="nhlu"/>
+        <Plugin Id="3" Name="Voice Profiler" UID="nhft" MF_Q="0.12" LF_Gain="0.398302" HP_Freq="0.00181818" HP_Gain="0.365926" HF_Q="0.03" MF_Gain="0.35" HF_Gain="0.569759" HF_Freq="0.454545" Comp="0.15" MF_Freq="0.0381288" LF_Freq="0.00502632" LF_Q="0.12"/>
       </Plugins>
     </Track>
     <Track Name="Interview" Pan="0.025">
       <Region Ref="2" Name="Interview 1" Start="10.758" Length="33.553" FadeIn="00.085" Gain="1.2" Leq="-21.1"/>
       <Region Ref="2" Name="Interview 2" Start="58.078" Length="05.636" Offset="05.840" FadeIn="00.773" FadeOut="00.140" Gain="-3.7"/>
       <Plugins>
-        <Plugin Id="0" Name="Equalizer" UID="nheq" Bypass="1" MF_Q="0.1" LF_Gain="0.5" HP_Freq="0.00454545" HP_Gain="0.2" HF_Q="0.1" MF_Gain="0.5" HF_Gain="0.5" HF_Freq="0.363636" HF_Type="0" MF_Freq="0.0454545" LF_Freq="0.00909091" LF_Q="0.1" LF_Type="0">
+        <Plugin Id="0" Name="Equalizer" UID="nheq" Bypass="1" MF_Q="0.1" HP_Freq="0.00454545" LF_Gain="0.5" HP_Gain="0.5" HF_Q="0.1" MF_Gain="0.5" HF_Gain="0.5" HF_Freq="0.363636" HF_Type="0" MF_Freq="0.0454545" LF_Freq="0.00909091" LF_Q="0.1" LF_Type="0">
           <![CDATA[]]>
         </Plugin>
       </Plugins>

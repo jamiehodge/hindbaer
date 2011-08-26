@@ -21,8 +21,8 @@ describe Hindbaer::Track do
   end
   
   it 'must return all plugins' do
-    @track.plugins.first.must_be_kind_of Hindbaer::Plugin
-    @track.plugins.size.must_equal 1
+    @track.plugins.first.must_be_kind_of Hindbaer::Plugin::Base
+    @track.plugins.size.must_equal 4
   end
   
   it 'must return parent session' do
