@@ -1,8 +1,8 @@
 Hindbær
 =======
 
-A [Hindenburg Journalist](http://hindenburgsystems.com/) client for parsing, 
-modifying and generating audio session files.
+Parse, modify and generate [Hindenburg Journalist](http://hindenburgsystems.com/)
+audio session files.
 
 Installation
 ------------
@@ -48,6 +48,8 @@ Retrieve all track plugins:
     plugin.id
     plugin.name
     plugin.uid
+    
+There is currently support for the four default plugins and their attributes.
     
 Retrieve all regions for a given track:
 

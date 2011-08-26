@@ -4,7 +4,7 @@ require File.expand_path('../lib/hindbaer/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Jamie Hodge"]
   gem.email         = ["jamiehodge@me.com"]
-  gem.description   = %q{A Hindenburg Journalist client}
+  gem.description   = %q{A Hindenburg Journalist parser}
   gem.summary       = %q{Parse, modify and generate Hindenburg Journalist audio session files}
   gem.homepage      = "http://github.com/jamiehodge/hindbaer"
 
