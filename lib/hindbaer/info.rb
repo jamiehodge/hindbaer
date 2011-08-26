@@ -53,6 +53,10 @@ module Hindbaer
       @doc['Date']
     end
     
+    def genre
+      @doc['Genre']
+    end
+    
     def copyright
       @doc['Copyright']
     end

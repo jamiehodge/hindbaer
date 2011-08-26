@@ -55,6 +55,10 @@ describe Hindbaer::Info do
     @info.copyright.must_equal '2011'
   end
   
+  it 'must return genre' do
+    @info.genre.must_equal 'Podcast'
+  end
+  
   it 'must return whether explicit' do
     @info.explicit?.must_equal true
   end
