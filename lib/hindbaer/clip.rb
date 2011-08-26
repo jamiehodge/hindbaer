@@ -22,6 +22,7 @@ module Hindbaer
     end
     
     def leq
+      return '-' if @doc['Leq'] == '-'
       @doc['Leq'].to_f
     end
   end
