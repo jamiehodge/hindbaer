@@ -22,7 +22,7 @@ describe Hindbaer::Clip do
   end
   
   it 'must return long-term equivalent level' do
-    @clip.leq.must_equal 0
+    @clip.leq.must_equal '-'
   end
   
   it 'must return parent group' do
