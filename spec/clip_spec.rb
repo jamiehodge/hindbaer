@@ -3,14 +3,15 @@ require 'spec_helper'
 describe Hindbaer::Clip do
   
   before do
-    @session = Hindbaer::Session.new('spec/fixtures/project.nhsx')
-    @group = @session.clipboard_groups.first
-    @clip = @group.clips.first
+    File.open('spec/fixtures/session.nhsx') do |f|
+      session = Hindbaer::Session.parse(f)
+      group = session.clipboard_groups.first
+      @clip = group.clips.first
+    end
   end
   
   it 'must return file reference' do
-    @clip.reference.must_be_kind_of Hindbaer::File
-    @clip.reference.id.must_equal 2
+    @clip.ref.must_equal '2'
   end
   
   it 'must return name' do
@@ -25,7 +26,4 @@ describe Hindbaer::Clip do
     @clip.leq.must_equal '-'
   end
   
-  it 'must return parent group' do
-    @clip.group.must_equal @group
-  end
 end

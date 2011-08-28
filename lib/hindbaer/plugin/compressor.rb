@@ -2,16 +2,14 @@ module Hindbaer
   module Plugin
     class Compressor < Hindbaer::Plugin::Base
 
-      def uid
-        'nhcl'
-      end
-
-      def name
-        'Compressor'
-      end
-
-      def comp
-        @doc['Comp']
+      attr_accessor :comp
+      
+      def self.parse(fragment)
+        plugin = super(fragment)
+        
+        plugin.comp = fragment['Comp']
+        
+        plugin
       end
       
     end

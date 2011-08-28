@@ -3,14 +3,15 @@ require 'spec_helper'
 describe Hindbaer::Region do
   
   before do
-    session = Hindbaer::Session.new('spec/fixtures/project.nhsx')
-    @track = session.tracks.first
-    @region = @track.regions.first
+    File.open('spec/fixtures/session.nhsx') do |f|
+      session = Hindbaer::Session.parse(f)
+      track = session.tracks.first
+      @region = track.regions.first
+    end
   end
   
   it 'must return audio reference' do
-    @region.reference.must_be_kind_of Hindbaer::File
-    @region.reference.id.must_equal 1
+    @region.ref.must_equal '1'
   end
   
   it 'must return name' do
@@ -18,7 +19,7 @@ describe Hindbaer::Region do
   end
   
   it 'must return start time' do
-    @region.start_time.must_equal '00.0'
+    @region.start.must_equal '00.0'
   end 
   
   it 'must return length' do
@@ -38,19 +39,16 @@ describe Hindbaer::Region do
   end
   
   it 'must return gain' do
-    @region.gain.must_equal -3.3
+    @region.gain.must_equal '-3.3'
   end
   
   it 'must return long-term equivalent level' do
-    @region.leq.must_equal -16.4
+    @region.leq.must_equal '-16.4'
   end
   
   it 'must return all fades' do
     @region.fades.first.must_be_kind_of Hindbaer::Fade
     @region.fades.size.must_equal 1
   end
-  
-  it 'must return parent track' do
-    @region.track.must_equal @track
-  end
+
 end

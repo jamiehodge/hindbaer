@@ -1,19 +1,19 @@
 module Hindbaer
   class Marker
-    def initialize(fragment)
-      @doc = fragment
+    
+    attr_accessor :id, :name, :time
+    
+    def self.parse(fragment)
+      new do
+        self.id = fragment['Id']
+        self.name  = fragment['Name']
+        self.time = fragment['Time']
+      end
     end
     
-    def id
-      @doc['Id'].to_i
+    def initialize(&block)
+      instance_eval(&block) if block_given?
     end
     
-    def name
-      @doc['Name']
-    end
-    
-    def time
-      @doc['Time']
-    end
   end
 end

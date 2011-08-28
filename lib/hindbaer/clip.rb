@@ -1,29 +1,20 @@
 module Hindbaer
   class Clip
     
-    def initialize(fragment, group)
-      @doc = fragment
-      @group = group
+    attr_accessor :ref, :name, :length, :leq
+    
+    def self.parse(fragment)
+      new do
+        self.ref = fragment['Ref']
+        self.name = fragment['Name']
+        self.length = fragment['Length']
+        self.leq = fragment['Leq']
+      end
     end
     
-    attr_reader :group
-    
-    def reference
-      id = @doc['Ref'].to_i
-      self.group.session.audio_pool.files.find { |a| a.id == id }
+    def initialize(&block)
+      instance_eval(&block) if block_given?
     end
     
-    def name
-      @doc['Name']
-    end
-    
-    def length
-      @doc['Length']
-    end
-    
-    def leq
-      return '-' if @doc['Leq'] == '-'
-      @doc['Leq'].to_f
-    end
   end
 end

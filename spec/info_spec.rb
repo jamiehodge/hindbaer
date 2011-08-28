@@ -3,8 +3,10 @@ require 'spec_helper'
 describe Hindbaer::Info do
   
   before do
-    session = Hindbaer::Session.new('spec/fixtures/project.nhsx')
-    @info = session.info
+    File.open('spec/fixtures/session.nhsx') do |f|
+      session = Hindbaer::Session.parse(f)
+      @info = session.info
+    end
   end
   
   it 'must return title' do
@@ -36,7 +38,7 @@ describe Hindbaer::Info do
   end
   
   it 'must return album track' do
-    @info.album_track.must_equal '1'
+    @info.track.must_equal '1'
   end
   
   it 'must return artist' do
@@ -60,7 +62,7 @@ describe Hindbaer::Info do
   end
   
   it 'must return whether explicit' do
-    @info.explicit?.must_equal true
+    @info.explicit.must_equal 'Yes'
   end
   
   it 'must return identifier' do

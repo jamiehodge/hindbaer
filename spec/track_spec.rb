@@ -3,8 +3,10 @@ require 'spec_helper'
 describe Hindbaer::Track do
   
   before do
-    @session = Hindbaer::Session.new('spec/fixtures/project.nhsx')
-    @track = @session.tracks.first
+    File.open('spec/fixtures/session.nhsx') do |f|
+      session = Hindbaer::Session.parse(f)
+      @track = session.tracks.first
+    end
   end
   
   it 'must return name' do
@@ -24,8 +26,5 @@ describe Hindbaer::Track do
     @track.plugins.first.must_be_kind_of Hindbaer::Plugin::Base
     @track.plugins.size.must_equal 4
   end
-  
-  it 'must return parent session' do
-    @track.session.must_equal @session
-  end
+
 end

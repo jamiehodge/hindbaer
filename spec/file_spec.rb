@@ -3,12 +3,14 @@ require 'spec_helper'
 describe Hindbaer::File do
   
   before do
-    project = Hindbaer::Session.new('spec/fixtures/project.nhsx')
-    @file = project.audio_pool.files.first
+    File.open('spec/fixtures/session.nhsx') do |f|
+      session = Hindbaer::Session.parse(f)
+      @file = session.audio_pool.files.first
+    end
   end
   
   it 'must return id' do
-    @file.id.must_equal 1
+    @file.id.must_equal '1'
   end
   
   it 'must return name' do
@@ -20,15 +22,15 @@ describe Hindbaer::File do
   end
   
   it 'must return the number of channels' do
-    @file.num_channels.must_equal 2
+    @file.channels.must_equal '2'
   end
   
   it 'must return leq' do
-    @file.leq.must_equal -10.4
+    @file.leq.must_equal '-10.4'
   end
   
   it 'must return dynamics' do
-    @file.dynamics.must_equal 0.0
+    @file.dyn.must_equal nil
   end
   
   it 'must return the original file path' do

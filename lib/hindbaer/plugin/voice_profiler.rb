@@ -2,62 +2,35 @@ module Hindbaer
   module Plugin
     class VoiceProfiler < Hindbaer::Plugin::Base
 
-      def uid
-        'nhft'
+      attr_accessor :comp
+      attr_accessor :low_freq_freq, :low_freq_gain, :low_freq_q
+      attr_accessor :mid_freq_freq, :mid_freq_gain, :mid_freq_q
+      attr_accessor :high_freq_freq, :high_freq_gain, :high_freq_q
+      attr_accessor :high_pass_freq, :high_pass_gain
+
+      def self.parse(fragment)
+        plugin = super(fragment)
+        
+        plugin.comp = fragment['Comp']
+        
+        plugin.low_freq_freq = fragment['LF_Freq']
+        plugin.low_freq_gain = fragment['LF_Gain']
+        plugin.low_freq_q    = fragment['LF_Q']
+        
+        plugin.mid_freq_freq = fragment['MF_Freq']
+        plugin.mid_freq_gain = fragment['MF_Gain']
+        plugin.mid_freq_q    = fragment['MF_Q']
+        
+        plugin.high_freq_freq = fragment['HF_Freq']
+        plugin.high_freq_gain = fragment['HF_Gain']
+        plugin.high_freq_q    = fragment['HF_Q']
+
+        plugin.high_pass_freq = fragment['HP_Freq']
+        plugin.high_pass_gain = fragment['HP_Gain']
+        
+        plugin
       end
 
-      def name
-        'Voice Profiler'
-      end
-
-      def low_freq_freq
-        @doc['LF_Freq']
-      end
-
-      def low_freq_gain
-        @doc['LF_Gain']      
-      end
-
-      def low_freq_q
-        @doc['LF_Q']
-      end
-
-      def mid_freq_freq
-        @doc['MF_Freq']
-      end
-
-      def mid_freq_gain
-        @doc['MF_Gain']
-      end
-
-      def mid_freq_q
-        @doc['MF_Q']
-      end
-
-      def high_freq_freq
-        @doc['HF_Freq']
-      end
-
-      def high_freq_gain
-        @doc['HF_Gain']
-      end
-
-      def high_freq_q
-        @doc['HF_Q']
-      end
-
-      def high_pass_freq
-        @doc['HP_Freq']
-      end
-
-      def high_pass_gain
-        @doc['HP_Gain']
-      end
-
-      def comp
-        @doc['Comp']
-      end
-      
     end
   end
 end

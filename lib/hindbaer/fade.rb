@@ -1,20 +1,18 @@
 module Hindbaer
   class Fade
     
-    def initialize(fragment)
-      @doc = fragment
+    attr_accessor :start, :length, :gain
+    
+    def self.parse(fragment)
+      new do
+        self.start = fragment['Start']
+        self.length = fragment['Length']
+        self.gain = fragment['Gain']
+      end
     end
     
-    def start_time
-      @doc['Start']
-    end
-    
-    def length
-      @doc['Length']
-    end
-    
-    def gain
-      @doc['Gain']
+    def initialize(&block)
+      instance_eval(&block) if block_given?
     end
     
   end

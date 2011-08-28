@@ -1,23 +1,23 @@
 module Hindbaer
   class Group
     
-    def initialize(fragment, session)
-      @doc = fragment
-      @session = session
+    attr_accessor :caption, :num_clips_used, :clips
+    
+    def self.parse(fragment)
+      new do
+        self.caption = fragment['Caption']
+        self.num_clips_used  = fragment['Used']
+        
+        self.clips = fragment.css('Clip').map do |c|
+          Hindbaer::Clip.parse(c)
+        end
+      end
     end
     
-    attr_reader :session
-    
-    def caption
-      @doc['Caption']
-    end
-    
-    def num_clips_used
-      @doc['Used'].to_i
-    end
-    
-    def clips
-      @doc.css('Clip').map { |c| Hindbaer::Clip.new(c.dup.unlink, self) }
+    def initialize(&block)
+      self.clips = []
+      
+      instance_eval(&block) if block_given?
     end
     
   end

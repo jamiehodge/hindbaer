@@ -3,13 +3,15 @@ require 'spec_helper'
 describe Hindbaer::Plugin::Base do
   
   before do
-    project = Hindbaer::Session.new('spec/fixtures/project.nhsx')
-    track = project.tracks.first
-    @plugin = track.plugins.first
+    File.open('spec/fixtures/session.nhsx') do |f|
+      session = Hindbaer::Session.parse(f)
+      track = session.tracks.first
+      @plugin = track.plugins.first
+    end
   end
   
   it 'must return id' do
-    @plugin.id.must_equal 0
+    @plugin.id.must_equal '0'
   end
   
   it 'must return name' do

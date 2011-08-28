@@ -1,36 +1,29 @@
 module Hindbaer
   class File
-    def initialize(fragment)
-      @doc = fragment
+    
+    ATTRIBUTES = %w{
+      id name duration
+      channels leq dyn
+      }
+      
+    attr_accessor *ATTRIBUTES
+    attr_accessor :original_path
+    
+    def self.parse(fragment)
+      new do
+        ATTRIBUTES.each do |attribute|
+          self.send("#{attribute.to_sym}=", fragment[attribute.capitalize])
+        end
+        
+        if fragment.at_css('MetaData')
+          self.original_path = fragment.at_css('MetaData')['OriginalPath']
+        end
+      end
     end
     
-    def id
-      @doc['Id'].to_i
+    def initialize(&block)
+      instance_eval(&block) if block_given?
     end
     
-    def name
-      @doc['Name']
-    end
-    
-    def duration
-      @doc['Duration']
-    end
-    
-    def num_channels
-      @doc['Channels'].to_i
-    end
-    
-    def leq
-      @doc['Leq'].to_f || 0
-    end
-    
-    def dynamics
-      @doc['Dyn'].to_f || 0
-    end
-    
-    def original_path
-      return unless md = @doc.at_css('MetaData')
-      md['OriginalPath']
-    end
   end
 end

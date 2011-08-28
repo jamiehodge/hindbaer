@@ -3,12 +3,14 @@ require 'spec_helper'
 describe Hindbaer::Marker do
   
   before do
-    project = Hindbaer::Session.new('spec/fixtures/project.nhsx')
-    @marker = project.markers.first
+    File.open('spec/fixtures/session.nhsx') do |f|
+      session = Hindbaer::Session.parse(f)
+      @marker = session.markers.first
+    end
   end
   
   it 'must return id' do
-    @marker.id.must_equal 1
+    @marker.id.must_equal '1'
   end
   
   it 'must return name' do

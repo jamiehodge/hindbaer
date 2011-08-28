@@ -2,20 +2,19 @@ module Hindbaer
   module Plugin
     class Base
       
-      def initialize(fragment)
-        @doc = fragment
+      attr_accessor :id, :name, :uid, :bypass
+      
+      def self.parse(fragment)
+        new do
+          self.id = fragment['Id']
+          self.name = fragment['Name']
+          self.uid = fragment['UID']
+          self.bypass = fragment['Bypass']
+        end
       end
-
-      def id
-        @doc['Id'].to_i
-      end
-
-      def name
-        @doc['Name']
-      end
-
-      def uid
-        @doc['UID']
+      
+      def initialize(&block)        
+        instance_eval(&block) if block_given?
       end
       
     end

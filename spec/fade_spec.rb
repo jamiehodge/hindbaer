@@ -3,10 +3,12 @@ require 'spec_helper'
 describe Hindbaer::Fade do
 
   before do
-    project = Hindbaer::Session.new('spec/fixtures/project.nhsx')
-    track = project.tracks[2]
-    region = track.regions.first
-    @fade = region.fades.first
+    File.open('spec/fixtures/session.nhsx') do |f|
+      session = Hindbaer::Session.parse(f)
+      track = session.tracks[2]
+      region = track.regions.first
+      @fade = region.fades.first
+    end
   end
   
   it 'must return start time' do

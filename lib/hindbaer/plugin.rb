@@ -7,16 +7,16 @@ module Hindbaer
   module Plugin
     extend self
     
-    def create(fragment)
+    def parse(fragment)
       case fragment['UID']
       when 'nheq'
-        Hindbaer::Plugin::Equalizer.new(fragment)
+        Hindbaer::Plugin::Equalizer.parse(fragment)
       when 'nhcl'
-        Hindbaer::Plugin::Compressor.new(fragment)
+        Hindbaer::Plugin::Compressor.parse(fragment)
       when 'nhlu'
-        Hindbaer::Plugin::Base.new(fragment)
+        Hindbaer::Plugin::Base.parse(fragment)
       when 'nhft'
-        Hindbaer::Plugin::VoiceProfiler.new(fragment)
+        Hindbaer::Plugin::VoiceProfiler.parse(fragment)
       end
     end
     

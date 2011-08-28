@@ -3,8 +3,10 @@ require 'spec_helper'
 describe Hindbaer::AudioPool do
   
   before do
-    session = Hindbaer::Session.new('spec/fixtures/project.nhsx')
-    @pool = session.audio_pool
+    File.open('spec/fixtures/session.nhsx') do |f|
+      session = Hindbaer::Session.parse(f)
+      @pool = session.audio_pool
+    end
   end
   
   it 'must return path to audio files' do

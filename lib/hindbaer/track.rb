@@ -1,27 +1,27 @@
 module Hindbaer
   class Track
     
-    def initialize(fragment, session = nil)
-      @doc = fragment
-      @session = session
+    attr_accessor :name, :pan, :regions, :plugins
+    
+    def self.parse(fragment)
+      new do
+        self.name = fragment['Name']
+        self.pan  = fragment['Pan']
+        
+        self.regions = fragment.css('Region').map do |r|
+          Hindbaer::Region.parse(r)
+        end
+        self.plugins = fragment.css('Plugin').map do |p|
+          Hindbaer::Plugin.parse(p)
+        end
+      end
     end
     
-    attr_reader :session
-    
-    def name
-      @doc['Name']
-    end
-    
-    def pan
-      @doc['Pan']
-    end
-    
-    def regions
-      @doc.css('Region').map { |r| Hindbaer::Region.new(r.dup.unlink, self) }
-    end
-    
-    def plugins
-      @doc.css('Plugin').map { |p| Hindbaer::Plugin.create(p.dup.unlink) }
+    def initialize(&block)
+      self.regions = []
+      self.plugins = []
+      
+      instance_eval(&block) if block_given?
     end
   end
 end
