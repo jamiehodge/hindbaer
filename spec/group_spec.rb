@@ -14,7 +14,7 @@ describe Hindbaer::Group do
   end
   
   it 'must return number of clips used' do
-    @group.num_clips_used.must_equal '2'
+    @group.used.must_equal '2'
   end
   
   it 'must return all clips' do

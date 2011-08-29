@@ -9,15 +9,14 @@ module Hindbaer
     attr_accessor *ATTRIBUTES
     attr_accessor :original_path
     
-    def self.parse(fragment)
+    def self.parse(doc)
       new do
         ATTRIBUTES.each do |attribute|
-          self.send("#{attribute.to_sym}=", fragment[attribute.capitalize])
+          self.send("#{attribute.to_sym}=", doc[attribute.capitalize])
         end
         
-        if fragment.at_css('MetaData')
-          self.original_path = fragment.at_css('MetaData')['OriginalPath']
-        end
+        self.original_path = doc.at_css('MetaData')['OriginalPath'] if 
+          doc.at_css('MetaData')
       end
     end
     

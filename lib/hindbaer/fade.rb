@@ -1,13 +1,17 @@
 module Hindbaer
   class Fade
     
-    attr_accessor :start, :length, :gain
+    ATTRIBUTES = %w{
+      start length gain
+      }
+      
+    attr_accessor *ATTRIBUTES
     
-    def self.parse(fragment)
+    def self.parse(doc)
       new do
-        self.start = fragment['Start']
-        self.length = fragment['Length']
-        self.gain = fragment['Gain']
+        ATTRIBUTES.each do |attribute|
+          self.send("#{attribute.to_sym}=", doc[attribute.capitalize])
+        end
       end
     end
     

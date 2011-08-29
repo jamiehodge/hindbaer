@@ -12,7 +12,7 @@ describe Hindbaer::Fade do
   end
   
   it 'must return start time' do
-    @fade.start_time.must_equal '06.426'
+    @fade.start.must_equal '06.426'
   end
   
   it 'must return length' do

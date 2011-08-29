@@ -1,17 +1,23 @@
 module Hindbaer
   class Track
     
-    attr_accessor :name, :pan, :regions, :plugins
+    ATTRIBUTES = %w{
+      name pan
+      }
+      
+    attr_accessor *ATTRIBUTES
+    attr_accessor :regions, :plugins
     
-    def self.parse(fragment)
+    def self.parse(doc)
       new do
-        self.name = fragment['Name']
-        self.pan  = fragment['Pan']
+        ATTRIBUTES.each do |attribute|
+          self.send("#{attribute.to_sym}=", doc[attribute.capitalize])
+        end
         
-        self.regions = fragment.css('Region').map do |r|
+        self.regions = doc.css('Region').map do |r|
           Hindbaer::Region.parse(r)
         end
-        self.plugins = fragment.css('Plugin').map do |p|
+        self.plugins = doc.css('Plugin').map do |p|
           Hindbaer::Plugin.parse(p)
         end
       end

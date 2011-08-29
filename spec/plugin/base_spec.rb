@@ -19,7 +19,7 @@ describe Hindbaer::Plugin::Base do
   end
   
   it 'must return uid (unique identifier)' do
-    @plugin.uid.must_equal 'nheq'
+    @plugin.u_i_d.must_equal 'nheq'
   end
   
 end

@@ -13,7 +13,7 @@ describe Hindbaer::Session do
   end
   
   it 'must return sample rate' do
-    @session.sample_rate.must_equal '44100'
+    @session.samplerate.must_equal '44100'
   end
   
   it 'must return session info' do

@@ -1,16 +1,23 @@
 module Hindbaer
   class Group
     
-    attr_accessor :caption, :num_clips_used, :clips
-    
+    ATTRIBUTES = %w{
+      caption used
+    }
+
+    attr_accessor *ATTRIBUTES
+    attr_accessor :clips
+
     def self.parse(fragment)
       new do
-        self.caption = fragment['Caption']
-        self.num_clips_used  = fragment['Used']
-        
-        self.clips = fragment.css('Clip').map do |c|
-          Hindbaer::Clip.parse(c)
+        ATTRIBUTES.each do |attribute|
+          self.send(
+            "#{attribute.to_sym}=",   
+            fragment[attribute.split('_').map(&:capitalize).join]
+          )
         end
+        
+        self.clips = fragment.css('Clip').map { |c| Hindbaer::Clip.parse(c) }
       end
     end
     

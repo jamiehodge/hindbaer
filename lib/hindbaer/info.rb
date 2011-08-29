@@ -15,11 +15,14 @@ module Hindbaer
         ATTRIBUTES.each do |attribute|
           self.send("#{attribute.to_sym}=", fragment[attribute.capitalize])
         end
+        
         self.keywords = keywords.split(',').map &:strip
       end
     end
     
     def initialize(&block)
+      self.keywords = []
+      
       instance_eval(&block) if block_given?
     end
     

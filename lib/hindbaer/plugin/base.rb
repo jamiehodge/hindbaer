@@ -2,18 +2,24 @@ module Hindbaer
   module Plugin
     class Base
       
-      attr_accessor :id, :name, :uid, :bypass
-      
+      ATTRIBUTES = %w{
+        id name uid bypass
+      }
+
+      attr_accessor *ATTRIBUTES
+
       def self.parse(fragment)
         new do
-          self.id = fragment['Id']
-          self.name = fragment['Name']
-          self.uid = fragment['UID']
-          self.bypass = fragment['Bypass']
+          ATTRIBUTES.each do |attribute|
+            self.send(
+              "#{attribute.to_sym}=",   
+              fragment[attribute.split('_').map(&:capitalize).join]
+            )
+          end
         end
       end
       
-      def initialize(&block)        
+      def initialize(&block)
         instance_eval(&block) if block_given?
       end
       

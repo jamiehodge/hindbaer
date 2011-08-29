@@ -1,14 +1,17 @@
 module Hindbaer
   class Clip
     
-    attr_accessor :ref, :name, :length, :leq
+    ATTRIBUTES = %w{
+      ref name length leq
+      }
+      
+    attr_accessor *ATTRIBUTES
     
-    def self.parse(fragment)
+    def self.parse(doc)
       new do
-        self.ref = fragment['Ref']
-        self.name = fragment['Name']
-        self.length = fragment['Length']
-        self.leq = fragment['Leq']
+        ATTRIBUTES.each do |attribute|
+          self.send("#{attribute.to_sym}=", doc[attribute.capitalize])
+        end
       end
     end
     

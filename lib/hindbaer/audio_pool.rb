@@ -1,14 +1,20 @@
 module Hindbaer
   class AudioPool
     
-    attr_accessor :path, :location, :files
+    ATTRIBUTES = %w{
+      path location
+      }
+      
+    attr_accessor *ATTRIBUTES
+    attr_accessor :files
     
-    def self.parse(fragment)
+    def self.parse(doc)
       new do
-        self.path = fragment['Path']
-        self.location = fragment['Location']
+        ATTRIBUTES.each do |attribute|
+          self.send("#{attribute.to_sym}=", doc[attribute.capitalize])
+        end
         
-        self.files = fragment.css('File').map do |f|
+        self.files = doc.css('File').map do |f|
           Hindbaer::File.parse(f)
         end
       end

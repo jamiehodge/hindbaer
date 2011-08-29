@@ -1,13 +1,20 @@
 module Hindbaer
   class Marker
     
-    attr_accessor :id, :name, :time
-    
+    ATTRIBUTES = %w{
+      id name time
+    }
+
+    attr_accessor *ATTRIBUTES
+
     def self.parse(fragment)
       new do
-        self.id = fragment['Id']
-        self.name  = fragment['Name']
-        self.time = fragment['Time']
+        ATTRIBUTES.each do |attribute|
+          self.send(
+            "#{attribute.to_sym}=",   
+            fragment[attribute.split('_').map(&:capitalize).join]
+          )
+        end
       end
     end
     

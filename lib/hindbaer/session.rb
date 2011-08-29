@@ -1,15 +1,21 @@
 module Hindbaer
   class Session
     
-    attr_accessor :version, :sample_rate
+    ATTRIBUTES = %w{
+      version samplerate
+      }
+      
+    attr_accessor *ATTRIBUTES
     attr_accessor :info, :audio_pool, :tracks, :clipboard_groups, :markers
     
     def self.parse(xml)
       doc = Nokogiri::XML(xml)
       
       new do
-        self.version = doc.at_css('Session')['Version']
-        self.sample_rate = doc.at_css('Session')['Samplerate']
+        ATTRIBUTES.each do |attribute|
+          self.send("#{attribute.to_sym}=",
+           doc.at_css('Session')[attribute.capitalize])
+        end
         
         self.info = Hindbaer::Info.parse(doc.at_css('Info'))
         
