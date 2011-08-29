@@ -24,7 +24,7 @@ Parse a session file:
     session.info.description
     session.info.author
     session.info.album
-    session.ínfo.album_track
+    session.ínfo.track
     session.info.keywords
     # etc.
     
@@ -36,15 +36,13 @@ Render Session object as xml:
     
 Retrieve all tracks:
 
-    tracks = session.tracks
-    track = tracks.first
+    track = session.tracks.first
     track.name
-    track.panning
+    track.pan
     
 Retrieve all track plugins:
 
-    plugins = track.plugins
-    plugin = plugins.first
+    plugin = track.plugins.first
     plugin.id
     plugin.name
     plugin.uid
@@ -53,11 +51,10 @@ There is currently support for the four default plugins and their attributes.
     
 Retrieve all regions for a given track:
 
-    regions = tracks.first.regions
-    region = region.first
-    region.reference # audio file reference
+    region = tracks.first.regions.first
+    region.ref # audio file reference
     region.name
-    region.start_time
+    region.start
     region.length
     region.offset
     region.fade_in
@@ -67,30 +64,26 @@ Retrieve all regions for a given track:
     
 Retrieve all fades for a given region:
 
-    fades = regions.first.fades
-    fade = fades.first
-    fade.start_time
+    fade = regions.first.fades.first
+    fade.start
     fade.length
     fade.gain
     
 Retrieve all clipboard groups and their clips:
 
-    groups = session.clipboard_groups
-    group = group.first
+    group = session.clipboard_groups.first
     group.caption
-    group.num_clips_used
+    group.used
     
-    clips = group.clips
-    clip = clips.first
-    clip.reference
+    clip = group.clips.first
+    clip.ref
     clip.name
     clip.length
     clip.leq # (long-term equivalent level)
     
 Retrieve all markers:
 
-    markers = session.markers
-    marker = markers.first
+    marker = session.markers.first
     marker.id
     marker.name
     marker.time
@@ -105,10 +98,19 @@ Retrieve all audio file references:
     file.id
     file.name
     file.duration
-    file.num_channels
+    file.channels
     file.leq # (long-term equivalent level)
-    file.dynamics
+    file.dyn
     file.original_path # original file path
+    
+Add a new track:
+
+    new_track = Hindbaer::Track.new do |t|
+      t.name = 'Foo'
+      t.pan = '-1'
+    end
+    session.tracks << new_track
+    session.to_xml
     
 License
 -------
