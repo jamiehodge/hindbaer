@@ -31,6 +31,9 @@ module Hindbaer
         plugin
       end
 
+      def to_xml(xml)
+        xml.Plugin Id: id, Name: name, UID: uid, Bypass: bypass, LF_Freq: low_freq_freq, LF_Gain: low_freq_gain, LF_Q: low_freq_q, MF_Freq: mid_freq_freq, MF_Gain: mid_freq_gain, MF_Q: mid_freq_q, HF_Freq: high_freq_freq, HF_Gain: high_freq_gain, HF_Q: high_freq_q, HP_Freq: high_pass_freq, HP_Gain: high_pass_gain, Comp: comp
+      end
     end
   end
 end

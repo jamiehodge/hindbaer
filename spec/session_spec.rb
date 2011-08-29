@@ -43,6 +43,8 @@ describe Hindbaer::Session do
     @session.length.must_equal 10269.025000000001
   end
   
-  it 'must render itself as xml'
+  it 'must render itself as xml' do
+    puts @session.to_xml
+  end
   
 end

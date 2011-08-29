@@ -27,5 +27,13 @@ module Hindbaer
       block.arity > 0 ? block.call(self) : instance_eval(&block)
     end
     
+    def to_xml(xml)
+      xml.Group Caption: caption, Used: used do
+        clips.each do |clip|
+          clip.to_xml(xml)
+        end
+      end
+    end
+    
   end
 end

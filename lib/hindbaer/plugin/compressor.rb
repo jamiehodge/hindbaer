@@ -12,6 +12,10 @@ module Hindbaer
         plugin
       end
       
+      def to_xml(xml)
+        xml.Plugin Id: id, Name: name, UID: uid, Bypass: bypass, Comp: comp
+      end
+      
     end
   end
 end

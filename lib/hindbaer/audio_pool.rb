@@ -26,5 +26,13 @@ module Hindbaer
       block.arity > 0 ? block.call(self) : instance_eval(&block)
     end
     
+    def to_xml(xml)
+      xml.AudioPool Path: path, Location: location do
+        files.each do |file|
+          file.to_xml(xml)
+        end
+      end
+    end
+    
   end
 end

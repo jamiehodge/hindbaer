@@ -19,5 +19,9 @@ module Hindbaer
       block.arity > 0 ? block.call(self) : instance_eval(&block)
     end
     
+    def to_xml(xml)
+      xml.Fade Start: start, Length: length, Gain: gain
+    end
+    
   end
 end

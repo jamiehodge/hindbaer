@@ -24,5 +24,11 @@ module Hindbaer
       block.arity > 0 ? block.call(self) : instance_eval(&block)
     end
     
+    def to_xml(xml)
+      xml.File Id: id, Name: name, Duration: duration, Channels: channels, Leq: leq do
+        xml.MetaData OriginalPath: original_path
+      end
+    end
+    
   end
 end

@@ -19,5 +19,9 @@ module Hindbaer
       block.arity > 0 ? block.call(self) : instance_eval(&block)
     end
     
+    def to_xml(xml)
+      xml.Clip Ref: ref, Name: name, Length: length, Leq: leq
+    end
+    
   end
 end

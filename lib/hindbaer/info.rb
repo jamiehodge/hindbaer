@@ -26,5 +26,9 @@ module Hindbaer
       block.arity > 0 ? block.call(self) : instance_eval(&block)
     end
     
+    def to_xml(xml)
+      xml.Info Subtitle: subtitle, Album: album, Composer: composer, Track: track, Genre: genre, Author: author, Link: link, Email: email, Description: description, Artist: artist, Date: date, Title: title, Explicit: explicit, Copyright: copyright, Identifier: identifier, Keywords: keywords.join(', '), Reference: reference
+    end
+    
   end
 end

@@ -22,5 +22,9 @@ module Hindbaer
       block.arity > 0 ? block.call(self) : instance_eval(&block)
     end
     
+    def to_xml(xml)
+      xml.Marker Id: id, Name: name, Time: time
+    end
+    
   end
 end
