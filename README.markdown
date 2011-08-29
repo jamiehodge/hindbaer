@@ -14,7 +14,9 @@ Usage
 
 Parse a session file:
 
-    session = Hindbaer::Session.new('spec/fixtures/project.nhsx')
+    f = File.open('spec/fixtures/session.nhsx')
+    session = Hindbaer::Session.parse(f)
+    f.close
     
     session.software_version
     session.sample_rate
