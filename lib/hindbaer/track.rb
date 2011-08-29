@@ -27,7 +27,7 @@ module Hindbaer
       self.regions = []
       self.plugins = []
       
-      instance_eval(&block) if block_given?
+      block.arity > 0 ? block.call(self) : instance_eval(&block)
     end
   end
 end

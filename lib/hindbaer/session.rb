@@ -43,7 +43,7 @@ module Hindbaer
       self.clipboard_groups = []
       self.markers = []
       
-      instance_eval(&block) if block_given?
+      block.arity > 0 ? block.call(self) : instance_eval(&block)
     end
     
     def length

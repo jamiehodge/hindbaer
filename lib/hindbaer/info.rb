@@ -23,7 +23,7 @@ module Hindbaer
     def initialize(&block)
       self.keywords = []
       
-      instance_eval(&block) if block_given?
+      block.arity > 0 ? block.call(self) : instance_eval(&block)
     end
     
   end
